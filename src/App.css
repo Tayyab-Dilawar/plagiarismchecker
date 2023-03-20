@@ -1,0 +1,392 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  max-height: 1000000px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333;
+  background: #fff;
+  font: 16px/1.6 "Muli", sans-serif;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+}
+
+textarea {
+  height: 150px !important;
+  min-height: 150px !important;
+}
+
+#header {
+  /* padding: 0px 100px; */
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+  background: #5b4181;
+  box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s linear;
+}
+
+#header .navbar-brand img {
+  width: 200px;
+}
+
+#header .navbar-collapse {
+  flex-grow: 0;
+}
+
+#header .navbar-collapse .navbar-nav {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+#header .navbar-collapse a:last-child {
+  padding-right: 0;
+}
+
+#header .navbar-collapse a {
+  color: white;
+  position: relative;
+}
+
+#header .navbar-collapse a:hover,
+#header .navbar-collapse a.active {
+  background: none;
+  color: #f64b4b;
+}
+
+#header .navbar-collapse a:hover:before,
+#header .navbar-collapse a.active:before {
+  right: 7px;
+  left: 8px;
+  opacity: 1;
+}
+
+#header .navbar-collapse a:before {
+  content: '';
+  background: #f64b4b;
+  height: 1px;
+  position: absolute;
+  bottom: 7px;
+  left: -20px;
+  right: 100%;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  opacity: 0;
+}
+
+.navbar-color {
+  background-color: #5b4181;
+}
+
+.block {
+  padding: 70px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.plagarism-block {
+  margin: 65px 0 0;
+  background-color: #ececec;
+}
+
+/* .title-holder {
+  margin: 0 0 40px;
+} */
+.title-holder h2 {
+  color: #5b4181;
+}
+
+.hr-line {
+  display: block;
+  width: 80px;
+  height: 7px;
+  background: #5b4181;
+  margin: 10px 0px;
+}
+
+.plagarism-p {
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.btn.btn-primary {
+  width: 50px;
+  background-color: white;
+  /* border-color: #5b4181; */
+  border: 2px solid #5b4181;
+  color: #5b4181;
+  /* padding: 10px 20px; */
+  font-size: 18px;
+  /* line-height: 18px; */
+  font-weight: 600;
+  border-radius: 0px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  transition: background 0.3s linear, color 0.3s linear;
+  -webkit-transition: background 0.3s linear, color 0.3s linear;
+}
+
+/* .btn.btn-primary:focus, */
+.btn.btn-primary:hover {
+  background-color: #5b4181;
+  border-color: #5b4181;
+  color: white;
+}
+
+.plagarism-text-show {
+  width: 100%;
+  height: 350px;
+  margin-left: -1.5px;
+  background-color: #eeeeee;
+  border: 3px solid #5b4181;
+  /* overflow: scroll; */
+}
+
+.plagarism-text-show p {
+  padding: 20px;
+  text-align: justify;
+  line-height: 27px;
+}
+
+.form-data {
+  border-radius: 0px !important;
+  background-color: #5b4181 !important;
+  color: white !important;
+  cursor: default;
+}
+
+.contact-form .form-control {
+  border-radius: 0px;
+}
+
+.plagiarism-two-btn {
+  width: 220px;
+  background-color: #5b4181;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  /* line-height: 18px; */
+  border-radius: 0px;
+  /* margin-bottom: 10px; */
+}
+
+.btn-one {
+  position: absolute;
+  right: 12px;
+}
+
+.plagiarism-two-btn i {
+  margin-right: 6px;
+}
+
+.result-block {
+  background-color: #ececec;
+}
+
+.result-block-images {
+  /* width: 80%; */
+  text-align: center;
+}
+
+.result-block-images img {
+  padding: 0 20px;
+  margin: 20px;
+}
+
+.free-online-h2 {
+  text-align: center;
+}
+
+.free-online-p {
+  text-align: justify;
+  width: 95%;
+}
+
+.free-online-p2 {
+  /* position: absolute; */
+  /* padding-right: 15px; */
+  float: right;
+  /* background-color: red; */
+}
+
+.about-block-p {
+  text-align: justify;  
+  line-height: 25px;
+}
+
+#header .navbar-collapse .navbar-nav {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+#header .navbar-collapse a:last-child {
+  padding-right: 0;
+}
+
+#header .navbar-collapse a {
+  color: white;
+  position: relative;
+}
+
+.contact-btn {
+  width: 150px;
+}
+
+.conact-icons i {
+  color: #5b4181;
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.contact-block-h4 {
+  color: #5b4181;
+  font-weight: normal;
+  font-size: 22px;
+}
+
+.contact-block-images img {
+  margin: 15px 10px 10px 0px ;
+}
+
+#footer {
+  background: #5b4181;
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+}
+
+
+
+.go-top {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #5b4181;
+  border-radius: 3px;
+  color: #fff;
+  border: 0;
+}
+
+.go-top:before {
+  width: 13px;
+  height: 13px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  content: '';
+  border-style: solid;
+  border-color: #fff;
+  border-width: 1px 1px 0 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -3px 0 0 -6px;
+}
+
+.go-top:hover {
+  background: #301d4e;
+}
+
+@media only screen and (max-width: 769px) {
+  .plagarism-block {
+    margin: 45px 0 0;
+  }
+
+  .plagarism-image {
+    width: 90%;
+    margin-top: 50px;
+  }
+
+  .plagarism-p,
+  .plagarism-text-show p {
+    font-size: 15px;
+  }
+
+  .result-block-images img {
+    padding: 0 10px;
+    margin: 10px;
+  }
+
+  .free-online-p {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .plagarism-image {
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+
+  .plagarism-text-show {
+    overflow: scroll;
+  }
+
+  .plagarism-text-show p {
+    font-size: 15px;
+  }
+
+  .plagiarism-two-btn {
+    width: 190px;
+    padding: 10px 20px;
+    font-size: 17px;
+  }
+
+  .plagiarism-two-btn i {
+    display: none;
+  }
+
+  .result-block-images img {
+    padding: 0 17px;
+    margin: 17px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .plagiarism-two-btn {
+    width: 170px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 321px) {
+  .plagiarism-two-btn {
+    width: 140px;
+  }
+
+  .plagarism-image {
+    margin-top: 50px;
+  }
+
+  .plagarism-block {
+    margin: 0;
+  }
+}
+
+
+/* .plagarism-block {
+  margin: 65px 0 0;
+  background-color: #ececec;
+} */
