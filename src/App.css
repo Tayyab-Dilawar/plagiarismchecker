@@ -176,13 +176,22 @@ textarea {
 .plagiarism-two-btn {
   width: 220px;
   background-color: #5b4181;
-  border: none;
+  /* border: none; */
+  border: 1px solid #5b4181;
   color: white;
   padding: 10px 20px;
   font-size: 18px;
   /* line-height: 18px; */
   border-radius: 0px;
   /* margin-bottom: 10px; */
+  transition: all 0.3s linear;
+
+}
+
+.plagiarism-two-btn:hover {
+  background-color: whitesmoke;
+  color: #5b4181;
+  /* border: 1px solid #5b4181; */
 }
 
 .btn-one {
