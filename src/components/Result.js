@@ -2,11 +2,8 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
 
-import img1 from '../images/result-1.png';
-import img2 from '../images/result-2.png';
-import img3 from '../images/result-3.png';
+import Testing from './Testing';
 
 const Result = () => {
     return (
@@ -15,9 +12,9 @@ const Result = () => {
                 <Row>
                     <Col sm={12}>
                         <div className='result-block-images'>
-                            <Image src={img1} />
-                            <Image src={img2} />
-                            <Image src={img3} />
+                            <Testing color='#5b4181' percentage={100} />
+                            <Testing color='#449d44' percentage={30} />
+                            <Testing color='#c9302c' percentage={70} />
                         </div>
                     </Col>
                 </Row>

@@ -174,7 +174,7 @@ textarea {
 }
 
 .plagiarism-two-btn {
-  width: 220px;
+  width: 230px;
   background-color: #5b4181;
   /* border: none; */
   border: 1px solid #5b4181;
@@ -191,7 +191,6 @@ textarea {
 .plagiarism-two-btn:hover {
   background-color: whitesmoke;
   color: #5b4181;
-  /* border: 1px solid #5b4181; */
 }
 
 .btn-one {
@@ -208,13 +207,25 @@ textarea {
 }
 
 .result-block-images {
-  /* width: 80%; */
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.result-block-images img {
-  padding: 0 20px;
-  margin: 20px;
+.circle-section {
+  margin-left: 40px;
+  margin-right: 40px;
+  position: relative;
+}
+
+.circle-section-text {
+  position: absolute;
+  line-height: 170px;
+  left: 70px;
+  z-index: 50;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: default;
 }
 
 .free-online-h2 {
@@ -227,14 +238,11 @@ textarea {
 }
 
 .free-online-p2 {
-  /* position: absolute; */
-  /* padding-right: 15px; */
   float: right;
-  /* background-color: red; */
 }
 
 .about-block-p {
-  text-align: justify;  
+  text-align: justify;
   line-height: 25px;
 }
 
@@ -269,7 +277,7 @@ textarea {
 }
 
 .contact-block-images img {
-  margin: 15px 10px 10px 0px ;
+  margin: 15px 10px 10px 0px;
 }
 
 #footer {
@@ -278,8 +286,6 @@ textarea {
   color: #fff;
   text-align: center;
 }
-
-
 
 .go-top {
   width: 50px;
@@ -332,14 +338,33 @@ textarea {
     font-size: 15px;
   }
 
-  .result-block-images img {
-    padding: 0 10px;
-    margin: 10px;
+  .circle-section {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .free-online-p {
     width: 100%;
     font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .circle-section {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+
+  .result-block-images {
+    flex-direction: column;
+  }
+
+  .circle-section {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 
@@ -366,11 +391,6 @@ textarea {
   .plagiarism-two-btn i {
     display: none;
   }
-
-  .result-block-images img {
-    padding: 0 17px;
-    margin: 17px;
-  }
 }
 
 @media only screen and (max-width: 376px) {
@@ -393,9 +413,3 @@ textarea {
     margin: 0;
   }
 }
-
-
-/* .plagarism-block {
-  margin: 65px 0 0;
-  background-color: #ececec;
-} */
